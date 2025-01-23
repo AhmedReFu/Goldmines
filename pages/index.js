@@ -23,6 +23,47 @@ export default function Home() {
   //this function for filter by genre
   const [selectedGenre, setSelectedGenre] = useState("All Movies");
 
+  const genres = [
+    "action",
+    "adventure",
+    "animation",
+    "comedy",
+    "drama",
+    "crime",
+    "fantasy",
+    "horror",
+    "romance",
+    "thriller",
+    "science_Fiction",
+  ];
+
+  const categories = [
+    "hindi",
+    "tamil",
+    "telugu",
+    "malayalam",
+    "kannada",
+    "english",
+    "dual_audio",
+    "hindi_dubbed",
+  ];
+
+  const handleGenreClick = (genre) => {
+
+    setSelectedGenre(genre);
+
+  };
+
+
+  const filteredData = publishedData.filter(movie => {
+    if (selectedGenre === "All Movies") return true;
+    if (categories.includes(selectedGenre)) {
+      return movie.category === selectedGenre;
+    } else {
+      return movie.genre.includes(selectedGenre);
+    }
+  })
+
   return (
     <>
       <Head>
@@ -207,6 +248,48 @@ export default function Home() {
           <li><Link href="/series" ><i><FaFilm className="fas" /></i> Series</Link></li>
           <li><Link href="/series" ><i><FaCheck className="fas" /></i> Original Series</Link></li>
           <li><Link href="/genre" ><i><FaClapperboard className="fas" /></i> Genre</Link></li>
+        </div>
+        <div className="moviestegs">
+          {/* mapping over the genres array to generate button */}
+          {genres.slice(0, 16).map(genre => (
+            <button key={genre} className={selectedGenre === genre ? 'active' : ''} onClick={() => handleGenreClick(genre)}>{genre}</button>
+          ))}
+          {categories.map(category => (
+            <button key={category} className={selectedGenre === category ? 'active' : ''} onClick={() => handleGenreClick(category)}>{category}</button>
+          ))}
+        </div>
+        <div className="moviescontainer">
+          {loading ? <div className="scrollcardssec flex flex-center h-15vh"><Loader /></div> : <>
+            {filteredData.length === 0 ? <p className="nodatafound">No Movie Found</p> : <>
+              {filteredData.map((movie) => (
+                <div className="card" key={movie._id}>
+                  <Link href={`/movies/${movie.slug}`}>
+                    <div className="cardimg">
+                      <img src={movie.smposter} alt="movie" loading="lazy" />
+                    </div>
+                    <div className="contents">
+                      <h5>{movie.title}</h5>
+                      <h6>
+                        <span>{movie.year}</span>
+                        <div className="rate">
+                          <i className="cardfas">
+                            <FaHeart />
+                          </i>
+                          <i className="cardfas">
+                            <FaEye />
+                          </i>
+                          <i className="cardfas">
+                            <FaStar />
+                          </i>
+                          <h6>{movie.rating}</h6>
+                        </div>
+                      </h6>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </>}
+          </>}
         </div>
       </div>
     </>

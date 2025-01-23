@@ -24,6 +24,7 @@ export default function Home() {
   const [selectedGenre, setSelectedGenre] = useState("All Movies");
 
   const genres = [
+    'All Movies',
     "action",
     "adventure",
     "animation",
@@ -47,10 +48,15 @@ export default function Home() {
     "dual_audio",
     "hindi_dubbed",
   ];
-
   const handleGenreClick = (genre) => {
 
-    setSelectedGenre(genre);
+    if (selectedGenre === genre) {
+
+      setSelectedGenre('All Movies')
+
+    } else {
+      setSelectedGenre(genre)
+    }
 
   };
 

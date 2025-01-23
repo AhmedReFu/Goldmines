@@ -3,7 +3,7 @@ import useFetchData from "@/hooks/useFetchData";
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
-import { FaAngleDoubleUp, FaCheck, FaDownload, FaEye, FaFilm, FaHeart, FaPhotoVideo, FaPlus, FaStar } from "react-icons/fa";
+import { FaAngleDoubleUp, FaArrowRight, FaCheck, FaDownload, FaEye, FaFilm, FaHeart, FaPhotoVideo, FaPlus, FaStar } from "react-icons/fa";
 import { FaClapperboard } from "react-icons/fa6";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -296,6 +296,9 @@ export default function Home() {
               ))}
             </>}
           </>}
+        </div>
+        <div className="nextpagelink">
+          <Link href='/all'><button className="cssbuttons_io_button">Next Page <div className="icon"><FaArrowRight /></div></button></Link>
         </div>
       </div>
     </>

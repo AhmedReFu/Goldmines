@@ -73,8 +73,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Movie App | Ahmed ReFat</title>
-        <meta name="description" content="Next Js Movie App" />
+        <title>Goldmines Picture</title>
+        <meta name="description" content="This is ultimate movie download website fast working." />
+        <meta name='dmca-site-verification' content='WEVvQy9xdXROYXhiSE52UlVBWlBuUmV3MmpLcDRvRmpRaklxTEZtMVZNST01' />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -97,9 +98,9 @@ export default function Home() {
             modules={[Pagination, Navigation, Autoplay]}
             scrollbar={{ draggable: true }}
           >
-          {loading ? <div className="slideimagebx flex flex-center"><Loader /></div>: <>
+            {loading ? <div className="slideimagebx flex flex-center"><Loader /></div> : <>
               {publishedData.slice(0, 5).map((movie) => {
-               return <SwiperSlide key={movie._id}>
+                return <SwiperSlide key={movie._id}>
                   <div className="slideimagebx">
                     {/* Background Image */}
                     <img
@@ -145,7 +146,7 @@ export default function Home() {
             </>}
             <div className="swiper-pagination"></div>
             <div className="swiper-scrollbar"></div>
-            </Swiper>
+          </Swiper>
         </div>
         <div className="tranding_bx ">
           <li><Link href="/all" className="active flex-center"><i><FaAngleDoubleUp className="fas" /></i> Latest</Link></li>
@@ -161,7 +162,7 @@ export default function Home() {
             className="myswiper"
             autoplay={{
               delay: 3000,
-              disableOnInteraction:false
+              disableOnInteraction: false
             }}
             direction="horizontal"
             loop={true}
@@ -172,44 +173,44 @@ export default function Home() {
             breakpoints={{
               1587: {
                 slidesPerView: 8,
-                spaceBetween:10,
+                spaceBetween: 10,
               },
-              
+
               1550: {
                 slidesPerView: 7,
-                spaceBetween:10,
+                spaceBetween: 10,
               },
               1200: {
                 slidesPerView: 6,
-                spaceBetween:20,
+                spaceBetween: 20,
               },
               1040: {
                 slidesPerView: 5,
-                spaceBetween:10,
+                spaceBetween: 10,
               },
               992: {
                 slidesPerView: 6,
-                spaceBetween:10,
+                spaceBetween: 10,
               },
               768: {
                 slidesPerView: 4,
-                spaceBetween:10,
+                spaceBetween: 10,
               },
               650: {
                 slidesPerView: 3,
-                spaceBetween:10,
+                spaceBetween: 10,
               },
               400: {
                 slidesPerView: 2,
-                spaceBetween:20,
+                spaceBetween: 20,
               },
               370: {
                 slidesPerView: 2,
-                spaceBetween:10,
+                spaceBetween: 10,
               },
               300: {
                 slidesPerView: 2,
-                spaceBetween:10,
+                spaceBetween: 10,
               },
             }}
           >
@@ -229,27 +230,27 @@ export default function Home() {
                               <span>{movie.year}</span>
                               <div className="rate">
                                 <i className="cardfas">
-                                  <FaHeart/>
+                                  <FaHeart />
                                 </i>
                                 <i className="cardfas">
-                                  <FaEye/>
+                                  <FaEye />
                                 </i>
                                 <i className="cardfas">
-                                  <FaStar/>
+                                  <FaStar />
                                 </i>
                                 <h6>{movie.rating}</h6>
                               </div>
                             </h6>
                           </div>
                         </Link>
-                    </div>
-                  </SwiperSlide>
-                })}
+                      </div>
+                    </SwiperSlide>
+                  })}
                 </>}
             </div>
           </Swiper>
         </div>
-        <div className="tranding_bx " style={{marginTop:'40px'}}>
+        <div className="tranding_bx " style={{ marginTop: '40px' }}>
           <li><Link href="/movies" ><i><FaPhotoVideo className="fas" /></i> Movies</Link></li>
           <li><Link href="/series" ><i><FaFilm className="fas" /></i> Series</Link></li>
           <li><Link href="/series" ><i><FaCheck className="fas" /></i> Original Series</Link></li>

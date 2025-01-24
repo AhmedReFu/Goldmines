@@ -115,7 +115,13 @@ export default function moviesPost() {
                                 </div>
                             </article>
                             <section className='downloadsec'>
-                                <h2>G-Drive [GDToT] Download Links</h2></section>
+                                <h2>G-Drive [GDToT] Download Links</h2>
+                                <div className="downloadlinks">
+                                    <a target='_blank' href={allData && allData[0]?.downloadlink['480p']}>Download 720p</a>
+                                    <a target='_blank' href={allData && allData[0]?.downloadlink['720p']}>Download 480p</a>
+                                    <a target='_blank' href={allData && allData[0]?.downloadlink['1080p']}>Download 1080p</a>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>

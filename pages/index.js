@@ -82,6 +82,8 @@ export default function Home() {
 
       <div>
         <div className="swiper_top_main">
+          {loading ? <div className="slideimagebx flex flex-center"><Loader /></div> :
+            <>
           <Swiper
             autoplay={{
               delay: 3000,
@@ -98,7 +100,7 @@ export default function Home() {
             modules={[Pagination, Navigation, Autoplay]}
             scrollbar={{ draggable: true }}
           >
-            {loading ? <div className="slideimagebx flex flex-center"><Loader /></div> : <>
+
               {publishedData.slice(0, 5).map((movie) => {
                 return <SwiperSlide key={movie._id}>
                   <div className="slideimagebx">
@@ -143,10 +145,11 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
               })}
-            </>}
+
             <div className="swiper-pagination"></div>
             <div className="swiper-scrollbar"></div>
-          </Swiper>
+              </Swiper>
+            </>}
         </div>
         <div className="tranding_bx ">
           <li><Link href="/all" className="active flex-center"><i><FaAngleDoubleUp className="fas" /></i> Latest</Link></li>

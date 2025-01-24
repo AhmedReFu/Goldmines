@@ -19,21 +19,21 @@ export default async function handlee(req, res) {
             const title = await Movie.find({ title: req.query.title })
             res.json(title)
         } else if(req.query?.titlecategory) {
-            const titlecategory = await Movie.find({ titlecategory: req.query.titlecategory })
-            res.json(titlecategory.reverse())
+            const titlecategory = await Movie.find({ titlecategory: req.query.titlecategory }).sort({ year: -1, date: -1 })
+            res.json(titlecategory)
         } else if (req.query?.genre) {
-            const genre = await Movie.find({ genre: req.query.genre })
-            res.json(genre.reverse())
+            const genre = await Movie.find({ genre: req.query.genre }).sort({ year: -1, date: -1 })
+            res.json(genre)
         } else if (req.query?.category) {
-            const category = await Movie.find({ category: req.query.category })
-            res.json(category.reverse())
+            const category = await Movie.find({ category: req.query.category }).sort({ year: -1, date: -1 })
+            res.json(category)
         }
         else if (req.query?.slug) {
             const slug = await Movie.find({ slug: req.query.slug })
             res.json(slug)
         } else {
-            const movies = await Movie.find({})
-            res.json(movies.reverse())
+            const movies = await Movie.find({}).sort({ year: -1, date: -1 });
+            res.json(movies)
         }
      } else {
         res.status(405).json({ message: "Method Not Allowed" })

@@ -79,6 +79,7 @@ export default function Home() {
         <meta name='dmca-site-verification' content='WEVvQy9xdXROYXhiSE52UlVBWlBuUmV3MmpLcDRvRmpRaklxTEZtMVZNST01' />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <script type='text/javascript' src='//pl17402522.profitablecpmrate.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
       </Head>
 
       <div>
@@ -306,6 +307,7 @@ export default function Home() {
           <Link href='/all'><button className="cssbuttons_io_button">Next Page <div className="icon"><FaArrowRight /></div></button></Link>
         </div>
       </div>
+      <script type='text/javascript' src='//pl17402769.profitablecpmrate.com/27/96/7a/27967aa2c01ee89cef99855a97cfccac.js'></script>
     </>
   );
 }

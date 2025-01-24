@@ -22,7 +22,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: red;
+    background: rgb(38, 255, 0);
     border-radius: 10px;
     /* Set the color of the scrollbar thumb */
 }
@@ -410,7 +410,7 @@ nav.sticky .mobile svg {
     position: relative;
     width: 100%;
     height: 600px;
-    /* margin-top: -58px; */
+     /* margin-top: 58px;  */
     z-index: 2;
 }
 
@@ -1541,7 +1541,7 @@ nav.sticky .mobile svg {
 }
 
 .rating h3 {
-    color: #6a7c8f;
+    color: #ffffff;
     font-weight: 500;
     padding-top: 15px;
 }
@@ -1561,18 +1561,18 @@ nav.sticky .mobile svg {
 }
 
 .rating h4 {
-    color: rgba(255, 255, 255, 0.604);
+    color: #ffffff;
     font-weight: 400;
     padding-top: 8px;
 }
 
 .rate h4 {
-    color: #78a6b8;
+    color: #ffffff;
     padding-top: 0;
 }
 
 .rate h4 span {
-    color: rgba(255, 255, 0, 0.587);
+    color: rgba(255, 255, 0, 0.78);
     font-weight: 600;
 }
 
@@ -1593,6 +1593,7 @@ nav.sticky .mobile svg {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-transform: capitalize;
 }
 
 .movietitle h1 {

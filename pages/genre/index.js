@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 
 
@@ -7,7 +6,7 @@ const category = (props) => {
     return (
         <>
         <Head>
-            <title>Genre - Category | Makmovies</title>
+                <title>Genre - Category | Goldmines Picture</title>
         </Head>
            
         </>

@@ -12,6 +12,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Home() {
+
   //fetch data with useHook
   const { allData, loading } = useFetchData("/api/getmovies");
 

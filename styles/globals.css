@@ -38,6 +38,7 @@ body {
 
 .flex-center {
     justify-content: center;
+    
 }
 
 .h-15vh {
@@ -2657,7 +2658,7 @@ footer {
 }
 
 .fperasec p {
-    color: #555;
+    color: #01e372;
 }
 
 

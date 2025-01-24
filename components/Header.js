@@ -46,9 +46,9 @@ export default function Header() {
     }
     const filteredMovies = publishedData.filter(movie => {
       return (
-      movie.title.toLowerCase().includes(movieShortname.toLowerCase())||
+        movie.title.toLowerCase().includes(movieShortname.toLowerCase()) ||
         movie.year.toLowerCase().includes(movieShortname.toLowerCase())
-    )
+      )
     });
     setSearchResult(filteredMovies);
   }, [movieShortname])
@@ -105,7 +105,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className="header">
+      <nav className="header flex-bw">
         <h1 className="logo" data-text="&nbsp;GoldminesPicture&nbsp;">
           <a href="/">&nbsp;GoldminesPicture&nbsp;</a>
         </h1>
@@ -141,8 +141,8 @@ export default function Header() {
 
         <div id={navbar ? "navbaractive" : "navbar"}>
           <div className="navlogomovie">
-            <h1 className="logo" data-text="&nbsp;GoldminesPicture&nbsp;">
-              <a href="/">&nbsp;GoldminesPicture&nbsp;</a>
+            <h1 className="logo" data-text="&nbsp;Goldmines Picture&nbsp;">
+              <a href="/">&nbsp;Goldmines Picture&nbsp;</a>
             </h1>
             <div className="navclosesvg" onClick={handleNavbarClose}>
               <IoClose />
@@ -191,7 +191,6 @@ export default function Header() {
             </li>
           </ul>
         </div>
-
         <div className="mobile">
           <BiSearch className="opensearchsvg" onClick={handleSearchbarOpen} />
           <FaBars onClick={handleNavbarOpen} />

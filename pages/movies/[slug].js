@@ -123,6 +123,10 @@ export default function moviesPost() {
                                 </div>
                             </section>
                         </div>
+
+                    </div>
+                    <div className="movietitle">
+                        <h1>Good One</h1>
                     </div>
                 </div>
             </div>

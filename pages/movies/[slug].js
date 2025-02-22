@@ -59,8 +59,10 @@ export default function moviesPost() {
         <>
             <Head>
                 <title>{allData && allData[0]?.title}</title>
-                <meta property="og:image" content={allData && allData[0]?.bgposter} />
-                <meta name="description" content={allData && allData[0]?.description} />
+                <meta property="og:image" content={allData[0]?.bgposter} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta name="description" content={allData[0]?.description} />
                 <script type='text/javascript' src='//pl17402522.effectiveratecpm.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
             </Head>
             <div>

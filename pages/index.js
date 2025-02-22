@@ -326,7 +326,7 @@ export default function Home() {
           </div>
         </div>}
       </div>
-      <script type='text/javascript' src='//pl17402769.profitablecpmrate.com/27/96/7a/27967aa2c01ee89cef99855a97cfccac.js'></script>
+
     </>
   );
 }

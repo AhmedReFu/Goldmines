@@ -21,6 +21,7 @@ export default function movies() {
         <Head>
             <title>Movies | Goldmines Picture</title>
             <meta name="description" content="All the movies" />
+            <script type='text/javascript' src='//pl17402522.effectiveratecpm.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
         </Head>
         <section className="genrenamesec">
             <div className="genrename">

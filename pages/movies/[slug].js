@@ -59,6 +59,7 @@ export default function moviesPost() {
         <>
             <Head>
                 <title>{allData && allData[0]?.title}</title>
+                <script type='text/javascript' src='//pl17402522.effectiveratecpm.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
             </Head>
             <div>
                 {loading ? <Spinner /> : <>

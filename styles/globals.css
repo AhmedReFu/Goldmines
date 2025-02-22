@@ -2243,7 +2243,7 @@ nav.sticky .mobile svg {
 @media screen and (max-width:820px) {
 
     .mainmoviebx {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .rightdata {

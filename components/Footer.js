@@ -27,7 +27,7 @@ const Footer = () => {
                         </div>
 
                     </div>
-                    <a href="https://www.dmca.com/Protection/Status.aspx?ID=6da34590-5510-4620-a257-c6a019d089bf&refurl=https://goldminespicture.xyz/" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=6da34590-5510-4620-a257-c6a019d089bf" alt="DMCA.com Protection Status" /></a>
+                    <a href="https://www.dmca.com/Protection/Status.aspx?ID=6da34590-5510-4620-a257-c6a019d089bf&refurl=https://goldminespicture.xyz/" title="DMCA.com Protection Status" className="dmca-badge"> <img src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=6da34590-5510-4620-a257-c6a019d089bf" alt="DMCA.com Protection Status" /></a>
                     <div className="copyright">
 
                         <p className=''>Copyright © {year} - All right reserved by Goldmines Picture</p>

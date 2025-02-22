@@ -35,7 +35,7 @@ export default function contact() {
                         </div>
                     </div>
                     <div className="bottomcard">
-                        <Link href='/' className="followbtn">Follow</Link>
+                        <Link href='https://www.linkedin.com/in/md-nazmul-islam-b123a522a/' className="followbtn">Follow</Link>
                         <div className="bcardtext">
                             <p>Learn More About my Profile</p>
                             <FaArrowDown />

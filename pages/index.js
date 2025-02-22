@@ -96,8 +96,8 @@ export default function Home() {
         <meta name='dmca-site-verification' content='WEVvQy9xdXROYXhiSE52UlVBWlBuUmV3MmpLcDRvRmpRaklxTEZtMVZNST01' />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content="/Logo.png" />
-        <meta property="image" content="/Logo.png" />
+        <meta property="og:image" content="https://goldminespicture.xyz/logo.jpg" />
+        <meta property="image" content="https://goldminespicture.xyz/logo.jpg" />
         <meta property="type" content="website" />
         <meta name="google-site-verification" content="b3EW3fiqt7pg5pyibUuJtz_cGIqeOOrSke6hxx3tzD4" />
         <script type='text/javascript' src='//pl17402522.effectiveratecpm.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>

@@ -14,7 +14,7 @@ export default function genres() {
     const { genre } = router.query;
 
     //use hooks
-    const { allData, loading } = useFetchData(`/api/getmovies?slug=${genre}`)
+    const { allData, loading } = useFetchData(`/api/getmovies?genre=${genre}`)
 
 
     //filter for published movies required
@@ -50,7 +50,7 @@ export default function genres() {
             <section className="genremoviesec">
                 <div className="genremovie">
                     {loading ? <Spinner /> : <>
-                        {genremovies.length === 0 ? <p className='nodatafound'>No Movie Found</p> : <>
+                        {genremovies.length === 0 ? <p className='nodatafound'>No Movie Found {genremovies.length}</p> : <>
                             {genremovies.map((movie) => {
                                 return <div className="mcard">
                                     <Link href={`/movies/${movie.slug}`}>

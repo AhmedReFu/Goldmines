@@ -57,16 +57,19 @@ export default function moviesPost() {
 
     return <>
         <>
-            <Head>
-                <title>{allData && allData[0]?.title}</title>
-                <meta property="og:image" content={allData[0]?.bgposter} />
-                <meta property="og:image:width" content="1200" />
-                <meta property="og:image:height" content="630" />
-                <meta name="description" content={allData[0]?.description} />
-                <script type='text/javascript' src='//pl17402522.effectiveratecpm.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
-            </Head>
-            <div>
-                {loading ? <Spinner /> : <>
+            {loading ? <Spinner /> : <>
+                <Head>
+                    <title>{allData && allData[0]?.title}</title>
+                    <meta property="og:image" content={allData[0]?.bgposter} />
+                    <meta name="og:description" content={allData[0]?.description} />
+                    <meta property="og:title" content={allData && allData[0]?.title} />
+
+                    <meta property="og:type" content="video.movie" />
+                    <meta property="og:site_name" content="Goldmines Picture" />
+                    <script type='text/javascript' src='//pl17402522.effectiveratecpm.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
+                </Head>
+                <div>
+
                     <div className="slideimagebx">
                         <img src={allData && allData[0]?.bgposter} alt="no image" loading='lazy' />
                     </div>
@@ -228,8 +231,9 @@ export default function moviesPost() {
                             </Link>
 
                         </div>
-                    </div></>}
-            </div>
+                    </div>
+                </div>
+            </>}
         </>
     </>
 }

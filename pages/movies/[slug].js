@@ -1,6 +1,10 @@
 import Spinner from '@/components/Spinner';
 import useFetchData from '@/hooks/useFetchData';
+import { IoMdDownload } from "react-icons/io";
+
 import Head from 'next/head';
+import { MdOutlineLiveTv } from "react-icons/md";
+
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
@@ -84,7 +88,7 @@ export default function moviesPost() {
                                         <button><FaThumbsUp className='sebtn' /> Like</button>
                                         <button><FaThumbsDown className='sebtn' /> Dislike</button>
                                     </div>
-                                    <a target="_blank" href={`${allData && allData[0]?.watchonline}`}><button className='watchmoviebtn'>Click to watch online</button></a>
+                                    <Link target="_blank" href={`${allData && allData[0]?.watchonline}`}><button className='watchmoviebtn'> <MdOutlineLiveTv /> Click to watch online</button></Link>
                                 </div>
                             </div>
                             <div className="rating">
@@ -162,9 +166,9 @@ export default function moviesPost() {
                                 <section className='downloadsec'>
                                     <h2>G-Drive [GDToT] Download Links</h2>
                                     <div className="downloadlinks">
-                                        <a target='_blank' href={allData && allData[0]?.downloadlink['480p']}>Download 720p</a>
-                                        <a target='_blank' href={allData && allData[0]?.downloadlink['720p']}>Download 480p</a>
-                                        <a target='_blank' href={allData && allData[0]?.downloadlink['1080p']}>Download 1080p</a>
+                                        <a target='_blank' href={allData && allData[0]?.downloadlink['480p']}><IoMdDownload /> Download 720p</a>
+                                        <a target='_blank' href={allData && allData[0]?.downloadlink['720p']}><IoMdDownload /> Download 480p</a>
+                                        <a target='_blank' href={allData && allData[0]?.downloadlink['1080p']}><IoMdDownload /> Download 1080p</a>
                                     </div>
                                 </section>
                             </div>

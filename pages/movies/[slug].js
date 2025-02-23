@@ -22,7 +22,7 @@ export default function moviesPost() {
     const { allMovie } = useFetchData('/api/getmovies')
 
     //filter  publish movies
-    const publishedData = allData.filter(ab => ab.status === "publish") 
+    const publishedData = allMovie.filter(ab => ab.status === "publish") 
 
 
     //scroll left right data

@@ -96,8 +96,8 @@ export default function Home() {
         <meta name='dmca-site-verification' content='WEVvQy9xdXROYXhiSE52UlVBWlBuUmV3MmpLcDRvRmpRaklxTEZtMVZNST01' />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content="https://goldminespicture.xyz/logo.jpg" />
-        <meta property="image" content="https://goldminespicture.xyz/logo.jpg" />
+
+        <meta property="image" content="https://goldminespicture.xyz/goldminespicture.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="type" content="website" />

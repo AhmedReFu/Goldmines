@@ -102,14 +102,7 @@ export default function Home() {
         <meta property="type" content="website" />
         <meta name="google-site-verification" content="b3EW3fiqt7pg5pyibUuJtz_cGIqeOOrSke6hxx3tzD4" />
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1T2SLM58J8"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
 
-          gtag('config', 'G-1T2SLM58J8');
-        </script>
         <script type='text/javascript' src='//pl17402522.effectiveratecpm.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
       </Head>
 

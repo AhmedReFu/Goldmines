@@ -20,7 +20,7 @@ export default function genres() {
     //filter for published movies required
     const filteredMovies = allData.filter(ab => ab.genre === ab.genre).sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).slice(0, 20)
 
-    const genremovies = [...filteredMovies].reverse();
+    const genremovies = [...filteredMovies];
 
     //function for capitalize title
     const capitalizeTitle = (str) => {

@@ -183,7 +183,7 @@ export default function moviesPost() {
                     <div className="raletedmovies">
                         <h3>LATEST MOVIES :</h3>
                         <div className="scrollcards">
-                            {publishedData.map((movie) => (
+                            {publishedData.sort((a, b) => b.year - a.year).map((movie) => (
                                 <div className="card" key={movie.slug}>
                                     <Link href={`/movies/${movie.slug}`}>
                                         <div className="cardimg">

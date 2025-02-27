@@ -38,6 +38,8 @@ export default function Home() {
   //filter for published movies required
   const publishedData = allData.filter((ab) => ab.status === "publish");
 
+  const movies = publishedData.sort((a, b) => b.year - a.year)
+
   //this function for filter by genre
   const [selectedGenre, setSelectedGenre] = useState("All Movies");
 
@@ -130,7 +132,7 @@ export default function Home() {
                   scrollbar={{ draggable: true }}
                 >
 
-                  {publishedData.slice(0, 5).map((movie) => {
+                  {movies.slice(0, 5).map((movie) => {
                     return <SwiperSlide key={movie._id}>
                       <div className="slideimagebx">
                         {/* Background Image */}
@@ -249,7 +251,7 @@ export default function Home() {
               <div className="scrollcards">
                 {loading ? <div className="scrollcardssec flex flex-center h-15vh"><Loader /></div> :
                   <>
-                    {publishedData.map((movie) => {
+                    {movies.map((movie) => {
                       return <SwiperSlide key={movie._id}>
                         <div className="card">
                           <Link href={`/movies/${movie.slug}`}>

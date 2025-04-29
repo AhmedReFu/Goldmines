@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+
 export default function Home() {
 
   //fetch data with useHook
@@ -112,7 +113,7 @@ export default function Home() {
 
       <div>
         {wLoading ? <WelcomeAnimation /> : <div>
-          <div className="swiper_top_main">
+          <div className="swiper_top_main ">
             {loading ? <div className="slideimagebx flex flex-center"><Loader /></div> :
               <>
                 <Swiper
@@ -132,7 +133,7 @@ export default function Home() {
                   scrollbar={{ draggable: true }}
                 >
 
-                  {movies.slice(0, 5).map((movie) => {
+                  {movies.slice(0, 6).map((movie) => {
                     return <SwiperSlide key={movie._id}>
                       <div className="slideimagebx">
                         {/* Background Image */}
@@ -143,6 +144,7 @@ export default function Home() {
                         />
 
                         {/* Content */}
+
                         <div className="content" key={movie._id}>
                           <div className="contentflex">
                             <div className="smalimg">
@@ -191,7 +193,7 @@ export default function Home() {
 
           <div className="scrollcardssec">
             <Swiper
-              slidesPerView={8}
+              slidesPerView={6}
               spaceBetween={10}
               className="myswiper"
               autoplay={{
@@ -205,48 +207,14 @@ export default function Home() {
               parallax={true}
               modules={[Pagination, Navigation, Autoplay]}
               breakpoints={{
-                1587: {
-                  slidesPerView: 8,
-                  spaceBetween: 10,
-                },
-
-                1550: {
-                  slidesPerView: 7,
-                  spaceBetween: 10,
-                },
-                1200: {
-                  slidesPerView: 6,
-                  spaceBetween: 20,
-                },
-                1040: {
-                  slidesPerView: 5,
-                  spaceBetween: 10,
-                },
-                992: {
-                  slidesPerView: 6,
-                  spaceBetween: 10,
-                },
-                768: {
-                  slidesPerView: 4,
-                  spaceBetween: 10,
-                },
-                650: {
-                  slidesPerView: 3,
-                  spaceBetween: 10,
-                },
-                400: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                370: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                },
-                300: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                },
+                0: { slidesPerView: 1, spaceBetween: 10 },
+                400: { slidesPerView: 2, spaceBetween: 10 },
+                650: { slidesPerView: 3, spaceBetween: 10 },
+                992: { slidesPerView: 4, spaceBetween: 10 },
+                1200: { slidesPerView: 5, spaceBetween: 10 },
+                1550: { slidesPerView: 6, spaceBetween: 10 },
               }}
+
             >
               <div className="scrollcards">
                 {loading ? <div className="scrollcardssec flex flex-center h-15vh"><Loader /></div> :

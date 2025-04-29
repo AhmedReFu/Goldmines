@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 export default function App({ Component, pageProps }) {
   return <>
     <Header/>
-    <main>
+    <main className="max-w-7xl">
       <Component {...pageProps} />
     </main>
     <Footer />

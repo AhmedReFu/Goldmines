@@ -212,13 +212,13 @@ export default function Home() {
                   parallax={true}
                   modules={[Pagination, Navigation, Autoplay]}
                   breakpoints={{
-                  1587: { slidesPerView: 6, spaceBetween: 10 },
-                  1550: { slidesPerView: 6, spaceBetween: 10 },
-                  1200: { slidesPerView: 5, spaceBetween: 10 },
-                  1040: { slidesPerView: 5, spaceBetween: 10 },
+                    1587: { slidesPerView: 7, spaceBetween: 10 },
+                    1536: { slidesPerView: 6, spaceBetween: 10 },
+                    1280: { slidesPerView: 6, spaceBetween: 10 },
+                    1024: { slidesPerView: 5, spaceBetween: 10 },
                   992: { slidesPerView: 4, spaceBetween: 10 },
-                  768: { slidesPerView: 4, spaceBetween: 10 },
-                  650: { slidesPerView: 3, spaceBetween: 10 },
+                    768: { slidesPerView: 4, spaceBetween: 10 },
+                    640: { slidesPerView: 3, spaceBetween: 10 },
                   400: { slidesPerView: 2, spaceBetween: 10 },
                   370: { slidesPerView: 2, spaceBetween: 10 },
                   300: { slidesPerView: 1, spaceBetween: 10 },

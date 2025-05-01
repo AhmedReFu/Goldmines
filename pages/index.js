@@ -191,67 +191,66 @@ export default function Home() {
             <li><Link href="/all" ><i><FaPlus className="fas" /></i> Recently Added</Link></li>
           </div>
 
-          <div className="scrollcardssec">
-            <Swiper
-              slidesPerView={6}
-              spaceBetween={10}
-              className="myswiper"
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false
-              }}
-              direction="horizontal"
-              loop={true}
-              speed={1200}
-              watchSlidesProgress={true}
-              parallax={true}
-              modules={[Pagination, Navigation, Autoplay]}
-              breakpoints={{
-                0: { slidesPerView: 1, spaceBetween: 10 },
-                400: { slidesPerView: 2, spaceBetween: 10 },
-                650: { slidesPerView: 3, spaceBetween: 10 },
-                992: { slidesPerView: 4, spaceBetween: 10 },
-                1200: { slidesPerView: 5, spaceBetween: 10 },
-                1550: { slidesPerView: 6, spaceBetween: 10 },
-              }}
-
-            >
-              <div className="scrollcards">
-                {loading ? <div className="scrollcardssec flex flex-center h-15vh"><Loader /></div> :
-                  <>
-                    {movies.map((movie) => {
-                      return <SwiperSlide key={movie._id}>
-                        <div className="card">
-                          <Link href={`/movies/${movie.slug}`}>
-                            <div className="cardimg">
-                              <img src={movie.smposter} alt="movie" loading="lazy" />
+          {loading ? (
+            <div className="scrollcardssec flex items-center justify-center h-[15vh]">
+              <Loader />
+            </div>
+          ) : (
+              <div className="scrollcardssec">
+                <Swiper
+                  slidesPerView={6}
+                  spaceBetween={10}
+                  className="myswiper"
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false
+                  }}
+                  direction="horizontal"
+                  loop={true}
+                  speed={1200}
+                  watchSlidesProgress={true}
+                  parallax={true}
+                  modules={[Pagination, Navigation, Autoplay]}
+                  breakpoints={{
+                  1587: { slidesPerView: 6, spaceBetween: 10 },
+                  1550: { slidesPerView: 6, spaceBetween: 10 },
+                  1200: { slidesPerView: 5, spaceBetween: 10 },
+                  1040: { slidesPerView: 5, spaceBetween: 10 },
+                  992: { slidesPerView: 4, spaceBetween: 10 },
+                  768: { slidesPerView: 4, spaceBetween: 10 },
+                  650: { slidesPerView: 3, spaceBetween: 10 },
+                  400: { slidesPerView: 2, spaceBetween: 10 },
+                  370: { slidesPerView: 2, spaceBetween: 10 },
+                  300: { slidesPerView: 1, spaceBetween: 10 },
+                }}
+                >
+                  {movies.map((movie, index) => (
+                    <SwiperSlide key={index}>
+                      <div className="card">
+                        <Link href={`/movies/${movie.slug}`}>
+                          <div className="cardimg">
+                            <img src={movie.smposter} alt="movie" loading="lazy" />
+                          </div>
+                          <div className="contents">
+                            <h5>{movie.title}</h5>
+                            <h6>
+                              <span>{movie.year}</span>
+                              <div className="rate">
+                              <i className="cardfas"><FaHeart /></i>
+                              <i className="cardfas"><FaEye /></i>
+                              <i className="cardfas"><FaStar /></i>
+                              <h6>{movie.rating}</h6>
                             </div>
-                            <div className="contents">
-                              <h5>{movie.title}</h5>
-                              <h6>
-                                <span>{movie.year}</span>
-                                <div className="rate">
-                                  <i className="cardfas">
-                                    <FaHeart />
-                                  </i>
-                                  <i className="cardfas">
-                                    <FaEye />
-                                  </i>
-                                  <i className="cardfas">
-                                    <FaStar />
-                                  </i>
-                                  <h6>{movie.rating}</h6>
-                                </div>
-                              </h6>
-                            </div>
-                          </Link>
+                          </h6>
                         </div>
-                      </SwiperSlide>
-                    })}
-                  </>}
+                      </Link>
+                    </div>
+                  </SwiperSlide>
+                ))}
+                </Swiper>
               </div>
-            </Swiper>
-          </div>
+          )}
+
           <div className="tranding_bx " style={{ marginTop: '40px' }}>
             <li><Link href="/movies" ><i><FaPhotoVideo className="fas" /></i> Movies</Link></li>
             <li><Link href="/series" ><i><FaFilm className="fas" /></i> Series</Link></li>
@@ -263,6 +262,7 @@ export default function Home() {
             {genres.slice(0, 16).map(genre => (
               <button key={genre} className={selectedGenre === genre ? 'active' : ''} onClick={() => handleGenreClick(genre)}>{genre}</button>
             ))}
+
             {categories.map(category => (
               <button key={category} className={selectedGenre === category ? 'active' : ''} onClick={() => handleGenreClick(category)}>{category}</button>
             ))}

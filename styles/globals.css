@@ -405,11 +405,7 @@ nav.sticky .mobile svg {
 .swiper_top_main {
     margin-top: 58px;
 }
-.max-w-7xl {
-    max-width: 80rem; /* same as max-w-7xl */
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .slideimagebx {
     position: relative;
@@ -468,7 +464,7 @@ nav.sticky .mobile svg {
     height: auto;
     width:100%;
     z-index: 2;
-    background-color:#00000090;
+    background-color:#000000c0;
 }
 
 .contentflex {
@@ -706,9 +702,6 @@ nav.sticky .mobile svg {
     margin: 0 20px;
     margin-top: 20px;
     width: 100%;
-    max-width: 80rem; /* same as max-w-7xl */
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .scrollcards {

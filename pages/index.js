@@ -41,6 +41,8 @@ export default function Home() {
 
   const movies = publishedData.sort((a, b) => b.year - a.year)
 
+  const tranding = allData.sort((a, b) => b.rating - a.rating)
+
   //this function for filter by genre
   const [selectedGenre, setSelectedGenre] = useState("All Movies");
 
@@ -198,8 +200,7 @@ export default function Home() {
           ) : (
               <div className="scrollcardssec">
                 <Swiper
-                  slidesPerView={6}
-                  spaceBetween={10}
+
                   className="myswiper"
                   autoplay={{
                     delay: 3000,
@@ -212,11 +213,11 @@ export default function Home() {
                   parallax={true}
                   modules={[Pagination, Navigation, Autoplay]}
                   breakpoints={{
-                    1587: { slidesPerView: 7, spaceBetween: 10 },
-                    1536: { slidesPerView: 6, spaceBetween: 10 },
+                    1587: { slidesPerView: 8, spaceBetween: 5 },
+                    1536: { slidesPerView: 7, spaceBetween: 5 },
                     1280: { slidesPerView: 6, spaceBetween: 10 },
                     1024: { slidesPerView: 5, spaceBetween: 10 },
-                  992: { slidesPerView: 4, spaceBetween: 10 },
+                    992: { slidesPerView: 4, spaceBetween: 10 },
                     768: { slidesPerView: 4, spaceBetween: 10 },
                     640: { slidesPerView: 3, spaceBetween: 10 },
                   400: { slidesPerView: 2, spaceBetween: 10 },
@@ -224,7 +225,7 @@ export default function Home() {
                   300: { slidesPerView: 1, spaceBetween: 10 },
                 }}
                 >
-                  {movies.map((movie, index) => (
+                  {tranding.map((movie, index) => (
                     <SwiperSlide key={index}>
                       <div className="card">
                         <Link href={`/movies/${movie.slug}`}>

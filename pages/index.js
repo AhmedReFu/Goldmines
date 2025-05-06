@@ -96,7 +96,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Goldmines Picture</title>
+        <title>Goldmines Picture | Download Dual Audio Hindi Dubbed Movies</title>
         <script type='text/javascript' src='//pl17402522.effectiveratecpm.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
       </Head>
 

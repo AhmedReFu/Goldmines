@@ -55,6 +55,7 @@ export default function Header() {
 
   const handleMovieClick = () => {
     setMovieShortname('');
+    setSearchbar(false);
   }
 
   const searchRef = useRef(null)
@@ -106,8 +107,8 @@ export default function Header() {
   return (
     <>
       <nav className="header flex-bw">
-        <h1 className="logo" data-text="&nbsp;GoldminesPicture&nbsp;">
-          <a href="/">&nbsp;GoldminesPicture&nbsp;</a>
+        <h1 className="logo" >
+          <a href="/" style={{ "color": "white" }}>Goldmines Picture</a>
         </h1>
         <form className={searchbar ? "search_bar active" : "search_bar"}>
           <input type="text" placeholder="Search Movies..." value={movieShortname} onChange={(e) => setMovieShortname(e.target.value)} />

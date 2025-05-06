@@ -5,15 +5,15 @@ export default function Document() {
     <Html lang="en">
 
       <Head>
-        <title>Goldmines Picture | Download Dual Audio Hindi Dubbed Movies</title>
+
         <meta name="description" content="Watch BollyWood & HollyWood Dubbed Movies, TV Series in Hindi Dubbed, Dual Audio | All Movies, TV Show , South Movies In Hindi + English Subtitles " />
 
         <meta name="keywords" content="Goldmines, Picture, South Movies Hindi Download, Hindi Dubbed Movie Download" />
 
         <meta name='dmca-site-verification' content='WEVvQy9xdXROYXhiSE52UlVBWlBuUmV3MmpLcDRvRmpRaklxTEZtMVZNST01' />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
         <link rel="icon" href="/favicon.ico" sizes="any" />
 

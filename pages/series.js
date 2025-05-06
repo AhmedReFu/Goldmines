@@ -19,7 +19,7 @@ export default function series() {
         <Head>
             <title>ALL Web Series | Goldmines Picture</title>
             <meta name="description" content="All the Web Series" />
-            <script type='text/javascript' src='//pl17402522.effectiveratecpm.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
+            <script type='text/javascript' src='//kingfainted.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
         </Head>
         <section className="genrenamesec">
             <div className="genrename">

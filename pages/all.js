@@ -19,7 +19,7 @@ export default function all() {
     <>
       <Head>
         <title>All Movies & Web Series Download | Goldmines Picture</title>
-        <script type='text/javascript' src='//pl17402522.effectiveratecpm.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
+        <script type='text/javascript' src='//kingfainted.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
       </Head>
       <section className="genrenamesec">
         <div className="genrename">

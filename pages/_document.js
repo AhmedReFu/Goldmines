@@ -34,7 +34,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <script data-cfasync='false' src='//wwr.hlinit.com/?tag=3002c935'></script>
+        
         <script type='text/javascript' src='//kingfainted.com/27/96/7a/27967aa2c01ee89cef99855a97cfccac.js'></script>
       </body>
     </Html>

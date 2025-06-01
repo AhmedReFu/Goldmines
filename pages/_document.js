@@ -8,7 +8,7 @@ export default function Document() {
 
         <meta name="description" content="Watch BollyWood & HollyWood Dubbed Movies, TV Series in Hindi Dubbed, Dual Audio | All Movies, TV Show , South Movies In Hindi + English Subtitles " />
 
-        <meta name="keywords" content="Goldmines, Picture, South Movies Hindi Download, Hindi Dubbed Movie Download" />
+        <meta name="keywords" content="Goldmines, Picture, South Movies Hindi Download, 2731197, Hindi Dubbed Movie Download" />
 
         <meta name='dmca-site-verification' content='WEVvQy9xdXROYXhiSE52UlVBWlBuUmV3MmpLcDRvRmpRaklxTEZtMVZNST01' />
 

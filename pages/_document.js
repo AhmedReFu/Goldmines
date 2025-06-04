@@ -6,7 +6,7 @@ export default function Document() {
 
       <Head>
 
-        <meta name="description" content="Goldmines Picture | Download Dual Audio Hindi Dubbed Movies, BollyWood & HollyWood Dubbed Movies, TV Series in Hindi Dubbed, Dual Audio | All Movies, TV Show , South Movies In Hindi + English Subtitles " />
+        <meta name="description" content="Goldmines Picture | Download Dual Audio Hindi Dubbed Movies, BollyWood & HollyWood Dubbed Movies, TV Series in Hindi Dubbed, Dual Audio | All Movies, TV Show, South Movies In Hindi + English Subtitles " />
 
         <meta name="keywords" content="Goldmines, Picture, South Movies Hindi Download, 2731197, Hindi Dubbed Movie Download" />
 
@@ -18,7 +18,7 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" sizes="any" />
 
         <meta property="og:title" content="Goldmines Picture | Download Dual Audio Hindi Dubbed Movies" />
-        <meta property="og:description" content="Goldmines Picture Download Movie BollyWood & HollyWood Dubbed Movies, TV Series in Hindi Dubbed, Dual Audio | All Movies, TV Show , South Movies In Hindi + English Subtitles"></meta>
+        <meta property="og:description" content="Goldmines Picture Download Movie BollyWood & HollyWood Dubbed Movies, TV Series in Hindi Dubbed, Dual Audio | All Movies, TV Show, South Movies In Hindi + English Subtitles"/>
         <meta property="og:image" content="https://goldminespicture.xyz/goldminespicture.jpg" />
         <meta property="og:url" content="https://goldminespicture.xyz" />
         <meta property="og:type" content="website" />

@@ -44,7 +44,8 @@ export default function Document() {
           strategy="afterInteractive"
         />
 
-        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4392057202464130"
+     crossorigin="anonymous"></script>
         <Script
           src="https://fpyf8.com/88/tag.min.js"
           data-zone="150224"

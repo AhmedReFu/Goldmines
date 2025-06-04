@@ -41,6 +41,7 @@ export default function App({ Component, pageProps }) {
          `,
         }}
       />
+        <Script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('groleegni.net',9415717,document.createElement('script'))</Script>
       <Component {...pageProps} />
     </main>
     <Footer />

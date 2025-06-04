@@ -32,8 +32,7 @@ export default function Document() {
         <script data-cfasync='false' src='//wwr.hlinit.com/?tag=3002c935'></script>
         <script src="https://fpyf8.com/88/tag.min.js" data-zone="150224" async data-cfasync="false"></script>
        
-       
-      </Head>
+       </Head>
       <body>
         <Main />
         <NextScript />

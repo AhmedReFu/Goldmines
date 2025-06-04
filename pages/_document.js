@@ -44,12 +44,7 @@ export default function Document() {
           strategy="afterInteractive"
         />
 
-        {/* Third-party scripts */}
-        <Script
-          src="//wwr.hlinit.com/?tag=3002c935"
-          data-cfasync="false"
-          strategy="afterInteractive"
-        />
+        
         <Script
           src="https://fpyf8.com/88/tag.min.js"
           data-zone="150224"

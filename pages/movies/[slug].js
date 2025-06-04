@@ -70,7 +70,7 @@ export default function moviesPost() {
 
                     <meta property="og:type" content="video.movie" />
                     <meta property="og:site_name" content="Goldmines Picture" />
-                    <script type='text/javascript' src='//kingfainted.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
+    <script src="https://fpyf8.com/88/tag.min.js" data-zone="150224" async data-cfasync="false"></script>
                 </Head>
                 <div>
 

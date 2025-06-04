@@ -11,7 +11,7 @@ export default function Document() {
         <meta name="keywords" content="Goldmines, Picture, South Movies Hindi Download, 2731197, Hindi Dubbed Movie Download" />
 
         <meta name='dmca-site-verification' content='WEVvQy9xdXROYXhiSE52UlVBWlBuUmV3MmpLcDRvRmpRaklxTEZtMVZNST01' />
-
+<meta name="google-adsense-account" content="ca-pub-4392057202464130">
 
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 

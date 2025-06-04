@@ -27,7 +27,8 @@ export default function Document() {
         <meta name="google-site-verification" content="b3EW3fiqt7pg5pyibUuJtz_cGIqeOOrSke6hxx3tzD4" />
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1T2SLM58J8"></script>
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4392057202464130"
+     crossorigin="anonymous"></script>
 <script src="https://fpyf8.com/88/tag.min.js" data-zone="150224" async data-cfasync="false"></script>
         <script type='text/javascript' src='//kingfainted.com/d9/16/02/d9160275c67db3687e67e1710f806ea8.js'></script>
       </Head>

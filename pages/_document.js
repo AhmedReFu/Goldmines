@@ -31,7 +31,6 @@ export default function Document() {
      crossorigin="anonymous"></script>
         <script data-cfasync='false' src='//wwr.hlinit.com/?tag=3002c935'></script>
         <script src="https://fpyf8.com/88/tag.min.js" data-zone="150224" async data-cfasync="false"></script>
-       <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://al5sm.com/tag.min.js',9415718,document.body||document.documentElement)</script>
        
        
       </Head>

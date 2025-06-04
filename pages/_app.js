@@ -41,7 +41,22 @@ export default function App({ Component, pageProps }) {
          `,
         }}
       />
-        <Script (function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('groleegni.net',9415717,document.createElement('script')) />
+             <Script
+        id="external-script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(d,z,s){
+              s.src='https://'+d+'/401/'+z;
+              try {
+                (document.body || document.documentElement).appendChild(s);
+              } catch(e) {
+                console.error(e);
+              }
+            })('groleegni.net', 9415717, document.createElement('script'));
+          `,
+        }}
+      />
       <Component {...pageProps} />
     </main>
     <Footer />
